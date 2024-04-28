@@ -73,6 +73,12 @@ table {
 
 
 /* ----- CHECK FOR USER DARK MODE PREFERENCE ----- */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--dark-gray); /* Background for dark mode */
+        color: var(--light-gray);           /* Text color for dark mode */
+    }
+}
 /* --------------- BEGIN USER PREFERS DARK COLOR SCHEME QUERY --------------- */
 body {
         background-color: var(--dark-gray); /* Change background to dark */
@@ -121,6 +127,7 @@ img{
 
 /* ----- ANIMATED ICON ----- */
 /* Icon and animation code from https://typogram.github.io/Anicons/ */
+/* Icon and animation code from https://typogram.github.io/Anicons/ */
 .icon{
     font-family: "Anicons Regular";
     font-size: 2em;
@@ -145,8 +152,6 @@ footer .icon{
   100% { font-variation-settings: "TIME" 100; }
 }
 
-
-
 /* ----- HANDLE PREFERS REDUCED MOTION FOR THE ICON ANIMATIONS ----- */
 .icon {
         animation: none; /* Disable animation */
@@ -166,7 +171,6 @@ footer .icon{
     }
 }
 /* --------------- END USER PREFERS REDUCED MOTION QUERY --------------- */
-
 
 
 /* ----- TEXT ----- */
